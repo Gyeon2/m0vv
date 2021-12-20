@@ -2,7 +2,7 @@ $(function(){
 
     $(window).scroll(function(){
 
-        curr = $(window).scrollTop();// 스크롤의 위치
+        curr = $(window).scrollTop();
 
         target = $('.sc_about').offset().top;
     
@@ -20,7 +20,7 @@ $(function(){
      AOS.init();
      $('.sc_how .slide_wrap>.btn.prev').click(function(e){
             e.preventDefault();
-            if($('.how_con>li.on').prev('.how_con>li').length == 0){//length는 개수 == 0? 존재하지 않다  
+            if($('.how_con>li.on').prev('.how_con>li').length == 0){
                 $('.how_con>li').removeClass('on');
                 $('.how_con>li:last-child').addClass('on');
             }else{
@@ -29,7 +29,7 @@ $(function(){
          });
          $('.sc_how .slide_wrap>.btn.next').click(function(e){
             e.preventDefault();
-            if($('.how_con>li.on').next('.how_con>li').length == 0){//length는 개수 == 0? 존재하지 않다  
+            if($('.how_con>li.on').next('.how_con>li').length == 0){
                 $('.how_con>li').removeClass('on');
                 $('.how_con>li:first-child').addClass('on');
             }else{
@@ -92,26 +92,6 @@ $(function(){
                 }
           });
 
-                //
-
-                // $('.sc_how .slide_wrap>.btn.next').click(function(e){
-                //     e.preventDefault();
-                //     $('.how_con>li.on').removeClass('on').next('.how_con>li').addClass('on');
-        
-                // });
-
-
-
-                //여기가 how 탭 부분 prev가 안 먹힌다
-                
-                //service 탭도 모르겠다....스와이퍼 이용
-
-                
-                
-                
-                
-                
-                //QNA 부분
 
 
 });
